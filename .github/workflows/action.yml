@@ -8,7 +8,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -24,10 +23,4 @@ jobs:
           python -m pip install influxdb
 
       - name: Run Python test
-        env:
-          INFLUXDB_HOST: ${{ secrets.INFLUXDB_HOST }}
-          INFLUXDB_PORT: 8086
-          INFLUXDB_USERNAME: ${{ secrets.INFLUXDB_USERNAME }}
-          INFLUXDB_PASSWORD: ${{ secrets.INFLUXDB_PASSWORD }}
-          INFLUXDB_DATABASE: ${{ secrets.INFLUXDB_DATABASE }}
-        run: python test.py
+        run: python azure_influxdb_ISUD.py
