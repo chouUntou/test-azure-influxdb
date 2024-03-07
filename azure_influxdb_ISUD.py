@@ -11,7 +11,7 @@ client = InfluxDBClient(host='4.216.59.33', port=8086, username='zhang', passwor
 # データを書き込む
 json_body = [
     {
-        "measurement": "test_m",
+        "measurement": "test_m_1",
         "tags": {
             "tag1": "name",
             "tag2": "age"
