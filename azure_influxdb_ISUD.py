@@ -10,11 +10,11 @@ json_body = [
     {
         "measurement": "test_m",
         "tags": {
-            "tag1": "テスト用"
+            "tag1": "戦国名将"
         },
         "fields": {
-            "name": "張",
-            "age": 19
+            "name": "武田信玄",
+            "age": 20
         }
     }
 ]
