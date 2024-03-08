@@ -3,7 +3,7 @@ name: InfluxDB v1 Test
 on:
   push:
     branches:
-      - main
+      - branch-1
 
 jobs:
   test:
